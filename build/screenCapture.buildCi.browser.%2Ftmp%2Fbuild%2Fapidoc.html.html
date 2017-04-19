@@ -1,0 +1,372 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/mirhampt/node-recaptcha">recaptcha (v1.2.1)</a>
+</h1>
+<h4>Display and verify a Recaptcha captcha</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recaptcha">module recaptcha</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recaptcha.Recaptcha">
+            function <span class="apidocSignatureSpan">recaptcha.</span>Recaptcha
+            <span class="apidocSignatureSpan">(public_key, private_key, data, secure)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>recaptcha</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recaptcha.</span>Recaptcha.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recaptcha.Recaptcha">module recaptcha.Recaptcha</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recaptcha.Recaptcha.Recaptcha">
+            function <span class="apidocSignatureSpan">recaptcha.</span>Recaptcha
+            <span class="apidocSignatureSpan">(public_key, private_key, data, secure)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recaptcha.Recaptcha.prototype">module recaptcha.Recaptcha.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recaptcha.Recaptcha.prototype.toHTML">
+            function <span class="apidocSignatureSpan">recaptcha.Recaptcha.prototype.</span>toHTML
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recaptcha.Recaptcha.prototype.verify">
+            function <span class="apidocSignatureSpan">recaptcha.Recaptcha.prototype.</span>verify
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recaptcha.recaptcha">module recaptcha.recaptcha</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recaptcha.recaptcha.Recaptcha">
+            function <span class="apidocSignatureSpan">recaptcha.recaptcha.</span>Recaptcha
+            <span class="apidocSignatureSpan">(public_key, private_key, data, secure)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recaptcha" id="apidoc.module.recaptcha">module recaptcha</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recaptcha.Recaptcha" id="apidoc.element.recaptcha.Recaptcha">
+        function <span class="apidocSignatureSpan">recaptcha.</span>Recaptcha
+        <span class="apidocSignatureSpan">(public_key, private_key, data, secure)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Recaptcha(public_key, private_key, data, secure) {
+    this.public_key = public_key;
+    this.private_key = private_key;
+    if (typeof(data) == 'boolean'){
+        this.data = undefined;
+        this.is_secure = data;
+    }
+    else {
+        this.data = data;
+        this.is_secure = secure;
+    }
+
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recaptcha.Recaptcha" id="apidoc.module.recaptcha.Recaptcha">module recaptcha.Recaptcha</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recaptcha.Recaptcha.Recaptcha" id="apidoc.element.recaptcha.Recaptcha.Recaptcha">
+        function <span class="apidocSignatureSpan">recaptcha.</span>Recaptcha
+        <span class="apidocSignatureSpan">(public_key, private_key, data, secure)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Recaptcha(public_key, private_key, data, secure) {
+    this.public_key = public_key;
+    this.private_key = private_key;
+    if (typeof(data) == 'boolean'){
+        this.data = undefined;
+        this.is_secure = data;
+    }
+    else {
+        this.data = data;
+        this.is_secure = secure;
+    }
+
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recaptcha.Recaptcha.prototype" id="apidoc.module.recaptcha.Recaptcha.prototype">module recaptcha.Recaptcha.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recaptcha.Recaptcha.prototype.toHTML" id="apidoc.element.recaptcha.Recaptcha.prototype.toHTML">
+        function <span class="apidocSignatureSpan">recaptcha.Recaptcha.prototype.</span>toHTML
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toHTML = function () {
+    var query_string = 'k=' + this.public_key;
+    if (this.error_code) {
+        query_string += '&amp;error=' + this.error_code;
+    }
+
+    var script_src = (this.is_secure ? "https://" : "http://") + SCRIPT_SRC + '?' + query_string;
+    var noscript_src = (this.is_secure ? "https://" : "http://") + NOSCRIPT_SRC + '?' + query_string;
+
+    return '&lt;script type="text/javascript" src="' + script_src + '"&gt;&lt;/script&gt;' +
+           '&lt;noscript&gt;&lt;iframe src="' + noscript_src + '" height="300" width="500" ' +
+           'frameborder="0"&gt;&lt;/iframe&gt;&lt;br&gt;&lt;textarea name="recaptcha_challenge_field" ' +
+           'rows="3" cols="40"&gt;&lt;/textarea&gt;&lt;input type="hidden" ' +
+           'name="recaptcha_response_field" value="manual_challenge"&gt;&lt;/noscript&gt;';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+app.get('/', function(req, res) {
+    var recaptcha = new Recaptcha(PUBLIC_KEY, PRIVATE_KEY);
+
+    res.render('form.jade', {
+        layout: false,
+        locals: {
+            recaptcha_form: recaptcha.<span class="apidocCodeKeywordSpan">toHTML</span>()
+        }
+    });
+});
+
+app.post('/', function(req, res) {
+    var data = {
+        remoteip:  req.connection.remoteAddress,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recaptcha.Recaptcha.prototype.verify" id="apidoc.element.recaptcha.Recaptcha.prototype.verify">
+        function <span class="apidocSignatureSpan">recaptcha.Recaptcha.prototype.</span>verify
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">verify = function (callback) {
+    var self = this;
+
+    // See if we can declare this invalid without even contacting Recaptcha.
+    if (typeof(this.data) === 'undefined') {
+        this.error_code = 'verify-params-incorrect';
+        return callback(false, 'verify-params-incorrect');
+    }
+    if (!('remoteip' in this.data &amp;&amp;
+          'challenge' in this.data &amp;&amp;
+          'response' in this.data))
+    {
+        this.error_code = 'verify-params-incorrect';
+        return callback(false, 'verify-params-incorrect');
+    }
+    if (this.data.response === '') {
+        this.error_code = 'incorrect-captcha-sol';
+        return callback(false, 'incorrect-captcha-sol');
+    }
+
+    // Add the private_key to the request.
+    this.data['privatekey'] = this.private_key;
+    var data_qs = querystring.stringify(this.data);
+
+    var req_options = {
+        host: API_HOST,
+        path: API_END_POINT,
+        port: 80,
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Length': data_qs.length
+        }
+    };
+
+    var request = http.request(req_options, function(response) {
+        var body = '';
+
+        response.on('error', function(err) {
+            self.error_code = 'recaptcha-not-reachable';
+            callback(false, 'recaptcha-not-reachable');
+        });
+
+        response.on('data', function(chunk) {
+            body += chunk;
+        });
+
+        response.on('end', function() {
+            var success, error_code, parts;
+
+            parts = body.split('\n');
+            success = parts[0];
+            error_code = parts[1];
+
+            if (success !== 'true') {
+                self.error_code = error_code;
+            }
+            return callback(success === 'true', error_code);
+        });
+    });
+    request.write(data_qs, 'utf8');
+    request.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var data = {
+    remoteip:  req.connection.remoteAddress,
+    challenge: req.body.recaptcha_challenge_field,
+    response:  req.body.recaptcha_response_field
+};
+var recaptcha = new Recaptcha(PUBLIC_KEY, PRIVATE_KEY, data);
+
+recaptcha.<span class="apidocCodeKeywordSpan">verify</span>(function(success, error_code) {
+    if (success) {
+        res.send('Recaptcha response valid.');
+    }
+    else {
+        // Redisplay the form.
+        res.render('form.jade', {
+            layout: false,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recaptcha.recaptcha" id="apidoc.module.recaptcha.recaptcha">module recaptcha.recaptcha</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recaptcha.recaptcha.Recaptcha" id="apidoc.element.recaptcha.recaptcha.Recaptcha">
+        function <span class="apidocSignatureSpan">recaptcha.recaptcha.</span>Recaptcha
+        <span class="apidocSignatureSpan">(public_key, private_key, data, secure)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Recaptcha(public_key, private_key, data, secure) {
+    this.public_key = public_key;
+    this.private_key = private_key;
+    if (typeof(data) == 'boolean'){
+        this.data = undefined;
+        this.is_secure = data;
+    }
+    else {
+        this.data = data;
+        this.is_secure = secure;
+    }
+
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
